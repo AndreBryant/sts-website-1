@@ -1,0 +1,113 @@
+.content {
+  width: 100vw;
+  display: block;
+  margin: 20px auto;
+  letter-spacing: 2px;
+  padding: 0 50px;
+  /* border: 1px solid red; */
+}
+
+.introduction-container,
+.sequences-container,
+.chunk-container,
+.meta-container,
+.appendices-container {
+  margin: 10vh 10vw;
+  line-height: 2rem;
+}
+
+.content h2 {
+  font-weight: 500;
+}
+
+.content h3 {
+  font-weight: 400;
+  margin: 25px 20px;
+}
+
+.content h4 {
+  font-weight: 350;
+  margin: 25px 35px;
+}
+
+.content p {
+  font-weight: 200;
+  margin-left: 50px;
+}
+
+.content a {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  margin: 25px 0;
+}
+
+table {
+  margin: 25px auto;
+}
+
+.table-overflow {
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90vw;
+  overflow-x: auto;
+}
+
+td,
+th {
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 2px;
+  padding: 10px;
+  font-size: 1.3em;
+  font-family: monospace;
+  line-height: 20px;
+}
+
+th {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px solid rgb(255, 255, 255);
+}
+table {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+td {
+  border-top: 0px;
+  border-bottom: 0px;
+  transform-origin: center;
+}
+
+td:hover {
+  background-color: white;
+  color: black;
+  transition: 0.1s;
+}
+
+pre {
+  margin: 20px 0;
+  color: black;
+  background-color: white;
+  max-width: 90%;
+  margin-inline: auto;
+  border-radius: 20px;
+  overflow-x: auto;
+}
+
+code {
+  font-size: 1.2em;
+  font-family: monospace;
+}
+
+img.sheet-music {
+  display: block;
+  filter: invert(1);
+  width: 350px;
+  margin-inline: auto;
+}

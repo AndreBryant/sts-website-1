@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+:root {
+  /* use variables here */
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 17rem;
+  transition: 0.5s;
+  filter: invert(1);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+  min-height: 100vh;
+  color: white;
+}
+
+p {
+  opacity: 0.695;
+}
+
+/* Create a custom scrollbar style. Created by Chat GPT */
+body::-webkit-scrollbar {
+  width: 10px; /* Set the width of the custom scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent; /* Set the background color of the scrollbar track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: white; /* Set the color of the scrollbar thumb (the draggable part) */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.502
+  ); /* Set the color of the scrollbar thumb on hover */
+}
+
+/* Button to toggle light or dark mode */
+.toggler {
+  position: absolute;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+
+  background-color: white;
+  color: black;
+
+  padding: 10px;
+
+  border-radius: 100%;
+  border: none;
+
+  transition: 0.5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999999999999999;
+  transition: 0.5s;
+}
+
+.toggler:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.toggler.active {
+  transition: 1s linear;
+  animation: togglerActive 1s ease;
+
+  /* animation: toggler 1s infinite linear; */
+}
+
+.toggler > img {
+  width: 2rem;
+  height: 2rem;
+}
+
+@keyframes togglerActive {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+figure {
+  width: 100%;
+  margin: 1rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+figure > figcaption {
+  opacity: 0.7;
+  font-size: 0.8rem;
+}
+
+.references > p {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.references > p > span {
+  font-size: 0.8rem;
+}
